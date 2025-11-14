@@ -17,6 +17,10 @@ namespace KengBlog.Data
                  .SetBasePath(Directory.GetCurrentDirectory())
                  .AddJsonFile("appsettings.json")
                  .Build();
+
+            //Console.WriteLine(">>> Current Directory: " + Directory.GetCurrentDirectory());
+            //Console.WriteLine(">>> Loaded Connection: " + configuration.GetConnectionString("DefaultConnection"));
+
             var builder = new DbContextOptionsBuilder<TeduBlogContext>();
             builder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             return new TeduBlogContext(builder.Options);
