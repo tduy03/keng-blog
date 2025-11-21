@@ -28,10 +28,10 @@ namespace TeduBlog.Data
                 var user = new AppUser()
                 {
                     Id = userId,
-                    FirstName = "Toan",
-                    LastName = "Tedu",
-                    Email = "admin@tedu.com.vn",
-                    NormalizedEmail = "ADMIN@TEDU.COM.VN",
+                    FirstName = "Dinh",
+                    LastName = "Tuan Duy",
+                    Email = "admin@gmail.com",
+                    NormalizedEmail = "ADMIN@GMAIL.COM",
                     UserName = "admin",
                     NormalizedUserName = "ADMIN",
                     IsActive = true,
